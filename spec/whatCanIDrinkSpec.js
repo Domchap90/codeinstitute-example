@@ -18,7 +18,9 @@ describe ("whatCanIDrink", function() {
     it("should return `Sorry. I can’t tell what drink because that age is incorrect!`", function(){
         expect(whatCanIDrink(130)).toBe("Sorry. I can’t tell what drink because that age is incorrect!");   // 130+
     });
-
+    it("should return `Error! Argument given is not a number.`", function(){
+        expect(whatCanIDrink("String arg")).toBe("Error! Argument given is not a number.");   // 130+
+    });
 });
     
 
